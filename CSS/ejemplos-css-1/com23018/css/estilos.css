@@ -1,0 +1,13 @@
+p{
+    color: blueviolet; /*Color de fuente*/
+    background-color: lavender;
+    padding: 20px;
+}
+h3{
+    color: blue;
+}
+h4{
+    background-color: beige;
+    color: red;
+    padding: 10px;
+}

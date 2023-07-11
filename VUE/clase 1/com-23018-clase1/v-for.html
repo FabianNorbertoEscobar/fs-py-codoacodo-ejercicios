@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo v-for</title>
+</head>
+<body>
+    <div id="ejemplo">
+        <h2> {{titulo}}</h2>
+        <div v-html="subtitulo1"></div>
+        <ul>
+            <li v-for="prod in productos">{{prod}}</li>
+        </ul>
+        <div v-html="subtitulo2"></div>
+        <table border="1">
+            <tr>
+                <th>Producto</th>
+                <th>Cantidad</th>
+                <th>Foto</th>
+            </tr>
+            <tr v-for="prod in productos2">
+                <td>{{prod.nombre}}</td>
+                <td>{{prod.cantidad}}</td>
+                <td><img v-bind:src=prod.foto alt="x" v-bind:width="tamanio"></td>
+            </tr>
+        </table>
+
+    </div>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="v-for.js"></script>
+</body>
+</html>

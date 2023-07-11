@@ -1,0 +1,35 @@
+/*Selector universal*/
+*{
+    background-color: lightgreen;
+    font-family: Verdana;
+}
+/*Selector de etiqueta*/
+h1{
+    color: white;
+    background-color: green;
+    padding: 10px;
+}
+h2{
+    color: green;
+    background-color: white;
+    padding: 5px;
+}
+p{
+    background-color: aquamarine;
+    font-family: Arial;
+    font-size: 18px;
+}
+/*Selector de clase*/
+.parrafo{
+    font-family: 'Comic Sans MS';
+    font-style: italic;
+    background-color: lightsalmon;
+}
+/*Selector de ID*/
+#recordatorio{
+    text-align: center;
+    border: 2px red solid;
+    color: red;
+    background-color: pink;
+    padding: 10px;
+}

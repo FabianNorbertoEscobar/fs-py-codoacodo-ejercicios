@@ -1,0 +1,29 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+h1{background-color: lightblue;}
+h2{background-color: lightgreen;}
+p{background-color: lightcoral;}
+
+.margenes-1{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.margenes-2{
+    margin-top: 50px;
+    margin-left: 30px;
+    margin-right: 70px;
+    margin-bottom: 10px;
+    margin-left: 10%;
+}
+.relleno-1{
+    padding: 15px;
+    background-color: lightsalmon;
+}
+.relleno-2{
+    background-color: lightslategrey;
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-bottom: 40px;
+}

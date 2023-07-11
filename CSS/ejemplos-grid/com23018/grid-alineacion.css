@@ -1,0 +1,16 @@
+.contenedor{
+    background-color: navy;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    /* justify-content: space-evenly; */
+    height: 500px;
+    grid-template-rows: repeat(2, 100px);
+    align-content: space-evenly;
+}
+.caja{
+    border: 1px solid white;
+    background-color: lightblue;
+    padding: 10px;
+    text-align: center;
+}

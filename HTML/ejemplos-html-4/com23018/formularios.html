@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+
+<body>
+    <h1>Clase 4 HTML - Formularios</h1>
+    <form action="" method="POST">
+        <fieldset>
+            <legend>Datos personales</legend>
+
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre" id="nombre" size="10" placeholder="Nombre...">
+
+            <label for="apellido">Apellido:</label>
+            <input type="text" name="apellido" id="apellido">
+
+            <label for="dni">DNI:</label>
+            <input type="number" name="dni" id="dni">
+            <label for="edad">Edad:</label>
+            <input type="number" name="edad" id="edad" min="18" max="120">
+
+            <label for="tramite">Nro trámite</label>
+            <input type="password" name="tramite" id="tramite">
+            <br><br>
+
+            <label for="fecnac">Fecha de nacimiento</label>
+            <input type="date" name="fecnac" id="fecnac" value="2018-07-22"
+            min="2018-01-01" max="2018-12-31">
+
+            <label for="correo">E-Mail:</label>
+            <input type="email" name="correo" id="correo">
+
+            <label for="adjunto">Adjunte su foto:</label>
+            <input type="file" name="adjunto" id="adjunto">
+            <br><br>
+            <label for="color_control">Color favorito:</label>
+            <input type="color" id="color_control" name="color_control">
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Datos para la inscripción</legend>
+            <label for="turno">Seleccione un turno:</label>
+            <select name="turno" id="turno">
+                <option value="1">Mañana</option>
+                <option value="2">Tarde</option>
+                <option value="3" selected>Vespertino</option>
+                <option value="4">Noche</option>
+            </select>
+            <br>
+
+            <label for="cp">Conocimientos previos:</label>
+            <input type="checkbox" name="cp" id="cp" value="1" checked> HTML
+            <input type="checkbox" name="cp" id="cp" value="2"> CSS
+            <input type="checkbox" name="cp" id="cp" value="3"> JS
+            <br>
+
+            <label for="rb">Estoy interesado en...</label>
+            <input type="radio" name="rb" id="rb" value="1"> FS - Python
+            <input type="radio" name="rb" id="rb" value="2"> FS - Java
+            <input type="radio" name="rb" id="rb" value="3"> FS - PHP
+            <input type="radio" name="rb" id="rb" value="4"> Diseño UX/UI
+            <br><br>
+        </fieldset>
+        <br>
+        <label for="comentarios"> Escriba su consulta...</label>
+        <br>
+        <textarea name="comentarios" id="comentarios" cols="30" rows="5" placeholder="Escriba algo..."></textarea>
+        <br><br>
+        <input type="submit" value="Enviar datos">
+        <input type="reset" value="Borrar datos">
+    </form>
+</body>
+
+</html>
